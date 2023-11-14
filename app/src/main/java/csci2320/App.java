@@ -3,6 +3,8 @@
  */
 package csci2320;
 
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -10,5 +12,8 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        scanner.close();
     }
 }
